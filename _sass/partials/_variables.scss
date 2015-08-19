@@ -17,14 +17,16 @@ Need help w/ choosing your colors? Try this site out:
 http://0to255.com/
 *********************/
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$text-color:        #111;
+$background-color:  #fdfdfd;
+$brand-color:       #2a7ae2;
+$secondary-color:   #f92672;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
+$grey-color:        #828282;
+$grey-color-light:  #d1d2d8;
+// lighten($grey-color, 40%);
+$grey-color-dark:   #323137;
+// darken($grey-color, 25%);
 /*
 Here's a great tutorial on how to
 use color variables properly:

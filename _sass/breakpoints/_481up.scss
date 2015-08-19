@@ -50,22 +50,21 @@ H1, H2, H3, H4, H5 STYLES
 HEADER STYLES
 *********************/
 
+.site-header {
+  padding: $spacing-unit/2 0;
+}
 
+.site-title {
+  float: left;
+}
 
 /*********************
 NAVIGATION STYLES
 *********************/
 
-/*
-all navs have a .nav class applied via
-the wp_menu function; this is so we can
-easily write one group of styles for
-the navs on the site so our css is cleaner
-and more scalable.
-*/
-
-
-
+.site-nav {
+  float: right;
+}
 
 /*********************
 POSTS & CONTENT STYLES
@@ -105,11 +104,10 @@ FOOTER STYLES
   float: left;
 }
 
-.footer-col-1,
-.footer-col-2 {
-  width: 50%;
-}
-
-.footer-col-3 {
+.footer-col-1 {
   width: 100%;
+}
+.footer-col-2,
+.footer-col-3 {
+  width: 50%;
 }

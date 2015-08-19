@@ -5,7 +5,8 @@ module.exports = function(grunt) {
 
     jekyll: {
       build : {
-        dest: '_site'
+        dest: '_site',
+        drafts: true
       }
     },
 
@@ -27,8 +28,8 @@ module.exports = function(grunt) {
         tasks: ['sass']
       },
       jekyll: {
-        files: ['_layouts/*.html', '_includes/*.html'],
-        tasks: ['jekyll']
+        files: ['*.html', '_layouts/*.html', '_includes/*.html', '_posts/*.md', '_drafts/*.md'],
+        tasks: ['jekyll', 'sass']
       }
     },
 

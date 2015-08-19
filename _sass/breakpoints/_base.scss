@@ -35,8 +35,7 @@ body {
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
+ul, ol, dl, figure {
   margin-bottom: $spacing-unit / 2;
 }
 
@@ -69,7 +68,7 @@ figcaption {
  * Lists
  */
 ul, ol {
-  margin-left: $spacing-unit;
+  padding-left: 20px;
 }
 
 li {
@@ -97,12 +96,8 @@ a {
   color: $brand-color;
   text-decoration: none;
 
-  &:visited {
-    color: darken($brand-color, 15%);
-  }
-
   &:hover {
-    color: $text-color;
+    color: darken($brand-color, 15%);
     text-decoration: underline;
   }
 }
@@ -130,6 +125,8 @@ blockquote {
 /**
  * Code formatting
  */
+
+ /*
 pre,
 code {
   font-size: 15px;
@@ -153,7 +150,7 @@ pre {
   }
 }
 
-
+*/
 
 /**
  * Wrapper
@@ -196,7 +193,7 @@ pre {
     vertical-align: middle;
 
     path {
-      fill: $grey-color;
+      fill: #fff;
     }
   }
 }
@@ -225,12 +222,8 @@ HEADER STYLES
 *********************/
 
 .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
   min-height: 56px;
-
-  // Positioning context for the mobile navigation icon
-  position: relative;
+  text-align: center;
 }
 
 .site-title {
@@ -238,11 +231,31 @@ HEADER STYLES
   line-height: 56px;
   letter-spacing: -1px;
   margin-bottom: 0;
-  float: left;
 
-  &,
   &:visited {
     color: $grey-color-dark;
+  }
+}
+
+.masterhead {
+  position: relative;
+  background: $grey-color-dark;
+  color: #fff;
+  padding: 20px 0;
+
+  &:after,
+  &:before {
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    content: '';
+    background: linear-gradient(to right, #fff 0, $brand-color 33%, $secondary-color 66%, #000 100%);
+  }
+
+  &:before {
+    top: 0;
   }
 }
 
@@ -251,16 +264,21 @@ NAVIGATION STYLES
 *********************/
 
 .site-nav {
-  float: right;
   line-height: 56px;
-
-  .menu-icon {
-    display: none;
-  }
 
   .page-link {
     color: $text-color;
     line-height: $base-line-height;
+    padding-bottom: 5px;
+
+    &:hover {
+      border-bottom: 3px solid $brand-color;
+      text-decoration: none;
+    }
+
+    &.active {
+      border-bottom: 3px solid #E75242;
+    }
 
     // Gaps between nav items, but not on the first one
     &:not(:first-child) {
@@ -278,25 +296,29 @@ POSTS & CONTENT STYLES
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
+  
 }
 
 .page-heading {
-  font-size: 20px;
+
 }
 
 .post-list {
-  margin-left: 0;
+  padding-left: 0;
   list-style: none;
 
   > li {
     margin-bottom: $spacing-unit;
   }
+
+  h2 {
+    margin-top: 0;
+  }
 }
 
 .post-meta {
   font-size: $small-font-size;
-  color: $grey-color;
+  color: $grey-color-light;
 }
 
 .post-link {
@@ -362,31 +384,53 @@ FOOTER STYLES
 *********************/
 
 .site-footer {
-  border-top: 1px solid $grey-color-light;
+  background: $grey-color-dark;
   padding: $spacing-unit 0;
+  position: relative;
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  &:before {
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    background: linear-gradient(to right, #fff 0, $brand-color 33%, $secondary-color 66%, #000 100%);
+  }
 }
 
 .footer-heading {
+  color: #fff;
   font-size: 18px;
   margin-bottom: $spacing-unit / 2;
 }
 
-.contact-list,
 .social-media-list {
   list-style: none;
-  margin-left: 0;
+  padding-left: 0;
+
+  a {
+    text-decoration: none;
+
+    .username {
+      text-decoration: underline;
+    }
+  }
 }
 
 .footer-col-wrapper {
   font-size: 15px;
-  color: $grey-color;
-  margin-left: -$spacing-unit / 2;
+  color: $grey-color-light;
   @extend %clearfix;
 }
 
 .footer-col {
   margin-bottom: $spacing-unit / 2;
-  padding-left: $spacing-unit / 2;
   width: -webkit-calc(100% - (#{$spacing-unit} / 2));
   width:         calc(100% - (#{$spacing-unit} / 2));
 }
