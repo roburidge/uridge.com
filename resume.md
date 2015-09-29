@@ -44,7 +44,7 @@ October 2010 -- November 2011
 
 
 **Web Designer / Developer** --- Self-Employed  
-September 2009 -- July 2012
+September 2009 -- October 2010
 
 * Freelance projects, producing designs in Photoshop and building WordPress themes.
 

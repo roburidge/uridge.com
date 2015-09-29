@@ -8,12 +8,9 @@ tags: javascript
 Unfortunately the service I've used to replace images is no longer working reliably. It works with some image sizes but fails to serve others. I need to find a more reliable kitten based place holder image service, or create my own.
 
 Replace images with kittens and lolcatify text by clicking this link:
-
 [Kittens Bookmarklet](javascript:!function()%7Bvar%20a%3Ddocument.createElement(%22script%22)%3Ba.setAttribute(%22src%22%2C%22https%3A%2F%2Fdl.dropboxusercontent.com%2Fu%2F2769844%2Flolcats-v2.js%22)%2Cdocument.body.appendChild(a)%7D()%3B)
 
 You can drag the link to your bookmarks and run this script on any page!
-
-Test Image:
 
 ![example image](http://www.placecage.com/c/300/201)
 

@@ -59,6 +59,10 @@ NAVIGATION STYLES
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+.page-content {
+  // shift for stickuy footer
+  padding-bottom: 190px;
+}
 
 .post-title {
   font-size: 36px;
@@ -118,13 +122,13 @@ FOOTER STYLES
 *********************/
 
 .footer-col-1 {
-    width: 50%;
+  width: 50%;
 }
 
 .footer-col-2 {
-    width: 25%;
+  width: 25%;
 }
 
 .footer-col-3 {
-    width: 25%;
+  width: 25%;
 }

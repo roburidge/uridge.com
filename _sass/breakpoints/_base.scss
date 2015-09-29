@@ -18,6 +18,10 @@ GENERAL STYLES
 /**
  * Basic styling
  */
+html {
+  height: 100%;
+}
+
 body {
   font-family: $base-font-family;
   font-size: $base-font-size;
@@ -26,6 +30,8 @@ body {
   color: $text-color;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
+  min-height: 100%;
+  position: relative;
 }
 
 
@@ -296,7 +302,8 @@ POSTS & CONTENT STYLES
  * Page content
  */
 .page-content {
-  
+  // shift for stickuy footer
+  padding-bottom: 360px;
 }
 
 .page-heading {
@@ -386,7 +393,10 @@ FOOTER STYLES
 .site-footer {
   background: $grey-color-dark;
   padding: $spacing-unit 0;
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 
   a {
     color: #fff;
