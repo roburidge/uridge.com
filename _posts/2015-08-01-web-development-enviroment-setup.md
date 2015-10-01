@@ -36,7 +36,7 @@ Install Homebrew: (http://brew.sh/)
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 {% endhighlight %}
 
-Verify Homebrew is not sick: 
+Verify Homebrew is not sick:
 
 {% highlight bash %}
 $ brew doctor
@@ -178,4 +178,4 @@ Compass requires Sass so both will be installed.
 
 ## Other stuff
 
-* [Set up AMP Stack for Local Development in OSX 10.9 Mavericks with Homebrew](http://coolestguidesontheplanet.com/set-amp-osx-10-9-mavericks-homebrew/)
+* [Set up an AMP Stack for Local Development in OS X 10.10 Yosemite using Homebrew](https://echo.co/blog/os-x-1010-yosemite-local-development-environment-apache-php-and-mysql-homebrew)
