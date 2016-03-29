@@ -30,10 +30,10 @@ $ xcode-select --install
 {% endhighlight %}
 
 ### Homebrew
-Install Homebrew: (http://brew.sh/)
+Install [Homebrew](http://brew.sh/)
 
 {% highlight bash %}
-$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 {% endhighlight %}
 
 Verify Homebrew is not sick:
